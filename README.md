@@ -1,4 +1,7 @@
 # Discord Rich Presence plugin for Qt Creator
+
+NOTE: This is a fork that follows Arch Linux's package versions.
+
 This plugin adds Discord Rich Presence support to Qt Creator, with a decent chunk of recognized file types, and handmade icons for some of the more obscure file types without icons of their own.
 
 ![](screenshots/demo_cycle_20fps.gif?raw=true)
