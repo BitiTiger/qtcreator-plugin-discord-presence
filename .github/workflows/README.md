@@ -22,6 +22,18 @@ snapshot build for the Qt Creator version that you specified.
 You need to keep these values updated for different versions of your plugin, and take care
 that the Qt version and Qt Creator version you specify are compatible.
 
+Sometimes the CI will fail during the `Configure & Build` step and the error
+will say:
+```txt
+CMake Error at cmake-3.28.3-linux-x86_64/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package):
+  By not providing "FindQt6.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Qt6", but
+  CMake did not find one.
+```
+This most likely happened due to a 404 error in the `Download Qt` step. The
+variable `qt_package_suffix` will need to be updated. Visit the link stored
+inside the `qt_base_url` variable and update `qt_package_suffix` accordingly.
+
 ## What it does
 
 The build job consists of several steps:
