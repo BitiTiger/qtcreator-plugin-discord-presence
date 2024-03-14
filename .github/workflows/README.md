@@ -50,4 +50,9 @@ The build job consists of several steps:
 If your plugin requires additional resources besides the plugin library, you need to adapt the
 script accordingly.
 
+The build artifacts might be missing a library file as mentioned in
+[this issue][2]. You will have to download it and manually add it to the correct
+place in the archive file.
+
 [1]: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-github-actions
+[2]: https://github.com/BitiTiger/qtcreator-plugin-discord-presence/issues/1
